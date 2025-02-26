@@ -18,7 +18,7 @@ export default function Home() {
       <Examples/>
       <HowItWorks/>
       <WhereItWorks/>
-      {/* <WhatIsUSG/> */}
+      <WhatIsUSG/>
       <TypeOfUSG/>
       <WhyChooseUs/>
       <Testimonials/>
