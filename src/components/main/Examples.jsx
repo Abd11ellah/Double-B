@@ -12,7 +12,7 @@ import AutoScroll from "embla-carousel-auto-scroll";
 
 const Examples = () => {
   return (
-    <div className="h-screen">
+    <div >
       <div className="w-full flex justify-center">
         <div className="relative w-fit">
           <h1 className="font-bold text-4xl z-[3] relative">

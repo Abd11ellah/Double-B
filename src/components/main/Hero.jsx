@@ -16,7 +16,7 @@ import HEADER from "@/utils/HEADERIMGs";
 
 const Hero = () => {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 4000, stopOnInteraction: true })
   );
 
   return (
@@ -80,6 +80,9 @@ const Hero = () => {
           className="w-full "
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.reset}
+          opts={{
+            loop: true,
+          }}
         >
           <CarouselContent>
             {HEADER.map((item, index) => (
@@ -88,7 +91,7 @@ const Hero = () => {
                   <Img
                     src={item?.src}
                     alt={item?.alt}
-                    className="w-[408px] h-[408px]"
+                    className="w-[100%] object-cover h-[408px]"
                   />
                 </div>
               </CarouselItem>

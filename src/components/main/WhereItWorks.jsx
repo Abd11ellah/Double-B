@@ -21,22 +21,32 @@ const WhereItWorks = () => {
       <Image 
           src={sc1}
           className='w-14 h-14 top-16 left-[950px] absolute'
+          alt="Example of user-generated content"
+
       />      
       <Image 
           src={sc2}
           className='w-12 h-12 top-16 left-[550px] absolute '
+          alt="Example of user-generated content"
+
       />      
       <Image 
           src={sc3}
           className='w-14 h-14 top-32 left-[350px] absolute'
+          alt="Example of user-generated content"
+
       />      
       <Image 
           src={sc4}
           className='w-14 h-14 top-[210px] left-[1200px] absolute'
+          alt="Example of user-generated content"
+
       />      
       <Image 
           src={sc5}
           className='w-14 h-14 top-[220px] left-[540px] absolute'
+          alt="Example of user-generated content"
+
       />
 
       {/* Text content */}  
@@ -69,18 +79,26 @@ const WhereItWorks = () => {
         <Image 
         src={p1}
         className='w-[300px] h-[625px] mr-4'
+        alt="Example of user-generated content"
+
         />
         <Image 
         src={p2}
         className='w-[300px] h-[625px] mr-4 mt-20'
+        alt="Example of user-generated content"
+
         />
         <Image 
         src={p3}
         className='w-[300px] h-[625px] mr-4'
+        alt="Example of user-generated content"
+
         />
         <Image 
         src={p4}
         className='w-[300px] h-[625px] mt-20'
+        alt="Example of user-generated content"
+
         />
       </div>
 
