@@ -7,7 +7,7 @@ import Img from "../common/image/Img";
 
 const Hero = () => {
   return (
-    <div className="w-full mt-9 flex flex-row items-center justify-center gap-16 px-[83px]">
+    <div className="w-full mt-9 flex flex-row items-center justify-center gap-16 px-[83px] mb-10">
       <div className="w-full flex flex-col justify-end items-start ml-[45px]">
         <div className="text-[40px] font-bold text-[#5962FE]">Double B</div>
         <div className="text-4xl font-bold text-[#3A3A3A]">
@@ -24,19 +24,39 @@ const Hero = () => {
           </div>
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center justify-center w-10 h-10 hover:-translate-y-1 duration-200 cursor-pointer">
-              <Img src={Instagram_logo?.src} className=" rounded-lg" />
+              <Img
+                src={Instagram_logo?.src}
+                alt="social-media-logos"
+                className=" rounded-lg"
+              />
             </div>
             <div className="flex items-center justify-center w-10 h-10 hover:-translate-y-1 duration-200 cursor-pointer">
-              <Img src={Youtube_logo?.src} className=" rounded" />
+              <Img
+                src={Youtube_logo?.src}
+                alt="social-media-logos"
+                className=" rounded"
+              />
             </div>
             <div className="flex items-center justify-center w-10 h-10 hover:-translate-y-1 duration-200 cursor-pointer">
-              <Img src={Tiktok_logo?.src} className=" rounded-lg" />
+              <Img
+                src={Tiktok_logo?.src}
+                alt="social-media-logos"
+                className=" rounded-lg"
+              />
             </div>
             <div className="flex items-center justify-center w-10 h-10 hover:-translate-y-1 duration-200 cursor-pointer">
-              <Img src={Snapchat_logo?.src} className=" rounded-lg" />
+              <Img
+                src={Snapchat_logo?.src}
+                alt="social-media-logos"
+                className=" rounded-lg"
+              />
             </div>
             <div className="flex items-center justify-center w-10 h-10 hover:-translate-y-1 duration-200 cursor-pointer">
-              <Img src={Facebook_logo?.src} className=" rounded-lg" />
+              <Img
+                src={Facebook_logo?.src}
+                alt="social-media-logos"
+                className=" rounded-lg"
+              />
             </div>
           </div>
         </div>
