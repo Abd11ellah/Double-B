@@ -9,7 +9,7 @@ import sc1 from "../../../public/recourses/Rectangle 17.png"
 import sc2 from "../../../public/recourses/Rectangle 18.png"
 import sc3 from "../../../public/recourses/Rectangle 19.png"
 import sc4 from "../../../public/recourses/Rectangle 20.png"
-import sc5 from "../../../public/recourses/Rectangle 21.png"
+import sc5 from "../../../public/recourses/Rectangle 100.png"
 
 const WhereItWorks = () => {
   return (
