@@ -7,7 +7,7 @@ import { RiLinkedinBoxLine } from "react-icons/ri";
 function Footer() {
   return (
     <>
-      <footer className="fixed bottom-0 w-full h-[372px] px-[112px] py-[32px] bg-[#5962FE] flex flex-col justify-start items-center">
+      <footer className=" w-full h-[372px] px-[112px] py-[32px] bg-[#5962FE] flex flex-col justify-start items-center">
         <div className="w-max h-max flex flex-col items-center justify-center ">
           <div className="h-12 w-[146px] flex flex-col items-center justify-center cursor-pointer">
             <Img
