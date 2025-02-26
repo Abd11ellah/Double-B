@@ -137,6 +137,7 @@ body {
   width: 100vw;
   font-weight: normal;
   background: rgb(var(--background-color));
+  overflow-x: hidden;
 }
 
 a {
