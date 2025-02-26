@@ -42,7 +42,7 @@ const TypeOfUSG = () => {
           aria-expanded={activeIndex === index}
         >
           {/* Content inside each section */}
-          <div className={`flex flex-col items-center  ${activeIndex === index?'text-left px-[32px]':'text-center justify-between'} border-solid border-2 border-[#C4C4C4] h-full rounded-[16px] py-[25px] `}>
+          <div className={`flex flex-col items-center  ${activeIndex === index?'text-left px-[32px] cursor-default':'text-center  justify-between'} border-solid border-2 border-[#C4C4C4] h-full rounded-[16px] py-[25px] `}>
             <span className="text-pink-500 text-2xl font-semibold w-full">
               {type.number}
             </span>
@@ -68,7 +68,7 @@ const TypeOfUSG = () => {
 
                 <div className="w-[50%] h-[408px] -mt-[15%] -mr-[6.5%] z-[2]">
                 <Image
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full cursor-default"
                   src={like}
                   alt="Example of user-generated content"
                   width={1000} // Optimized size
