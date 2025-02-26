@@ -1,11 +1,24 @@
+"use client";
 import Youtube_logo from "../../assets/images/Youtube.png";
 import Tiktok_logo from "../../assets/images/Tiktok.png";
 import Snapchat_logo from "../../assets/images/Snapchat.png";
 import Instagram_logo from "../../assets/images/Instagram.png";
 import Facebook_logo from "../../assets/images/Facebook.png";
 import Img from "../common/image/Img";
+import React from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import HEADER from "@/utils/HEADERIMGs";
 
 const Hero = () => {
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
+
   return (
     <div className="w-full mt-9 flex flex-row items-center justify-center gap-16 px-[83px] mb-10">
       <div className="w-full flex flex-col justify-end items-start ml-[45px]">
@@ -61,7 +74,28 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="w-full">
+        <Carousel
+          plugins={[plugin.current]}
+          className="w-full "
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+        >
+          <CarouselContent>
+            {HEADER.map((item, index) => (
+              <CarouselItem key={index}>
+                <div className="">
+                  <Img
+                    src={item?.src}
+                    alt={item?.alt}
+                    className="w-[408px] h-[408px]"
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </div>
     </div>
   );
 };
