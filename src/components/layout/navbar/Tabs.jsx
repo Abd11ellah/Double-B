@@ -7,7 +7,7 @@ function Tabs({ item }) {
   return (
     <div ref={clickRef} className=" relative h-full w-max">
       <div
-        className={`relative h-full font-bold flex items-center gap-1 leading-[16px] text-additionalColorDark hover:text-mainColorPink cursor-pointer duration-[0.3s]`}
+        className={`relative h-full font-bold flex justify-center items-center gap-4 leading-[16px] text-[#3a3a3a] hover:text-[#F501A8] hover:drop-shadow cursor-pointer duration-300`}
       >
         {item?.name}
       </div>
