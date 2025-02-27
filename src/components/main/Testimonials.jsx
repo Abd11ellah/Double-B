@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion';
 import frame35 from "../../../public/recourses/Rectangle 35.png"
-import frame75 from "../../../public/recourses/frame 75.png"
+import frame75 from "../../../public/recourses/fra.png"
 
 const Testimonials = () => {
   return (
