@@ -3,6 +3,9 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion';
 import frame35 from "../../../public/recourses/Rectangle 35.png"
+import linkedin from "../../../public/recourses/Rectangle 39.png"
+import bih from "../../../public/recourses/Group.png"
+import x from "../../../public/recourses/Rectangle 36.png"
 
 const Testimonials = () => {
   return (
@@ -46,7 +49,10 @@ const Testimonials = () => {
             During this journey, I have been very happy with my ratings and achieving 
             over 100 videos for brands across various cities in Syria.
             </p>
-            <div className='mt-6'>
+            <div className='mt-6 flex '>
+              <Image src={linkedin} className='w-[23px] h-[23px] mr-2' />
+              <Image src={x} className='w-[23px] h-[23px] mr-2' />
+              <Image src={bih} className='w-[23px] h-[23px]' />
             </div>
           </div>
         </div>
