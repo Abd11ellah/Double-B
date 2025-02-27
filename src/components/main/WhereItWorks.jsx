@@ -1,5 +1,8 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion';
+
 
 import p1 from "../../../public/recourses/Instagram.png"
 import p2 from "../../../public/recourses/Snapchat.png"
@@ -44,7 +47,7 @@ const WhereItWorks = () => {
       />      
       <Image 
           src={sc5}
-          className='w-14 h-14 top-[220px] left-[540px] absolute'
+          className='w-14 h-14 top-[220px] left-[590px] absolute'
           alt="Example of user-generated content"
 
       />
@@ -53,19 +56,20 @@ const WhereItWorks = () => {
       <div
         className=' '
       >
-        <div 
-          className=' relative'
-        >
-          <p  
-            className=' font-bold flex justify-center text-3xl  relative z-10 text-[#3A3A3A]'
-            >
-            Where it works?
-          </p>
-            
-          <div
-            className='absolute w-64 h-4 bg-[#FFDF40] top-5 right-[642px] z-0 '
+        <div className="w-full flex justify-center">
+        <div className="relative w-fit">
+          <h1 className="font-bold text-4xl z-[3] relative">
+          Where it works?
+          </h1>
+          <motion.div
+            className="bg-[#FFDF40] z-[2] w-full h-[10px] absolute bottom-1 left-0"
+            initial={{ width: "0%" }}
+            whileInView={{ width: "100%" }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
           />
         </div>
+      </div>
         <p
           className='mt-8 flex justify-center font-bold text-2xl text-[#3A3A3A]'
         >
@@ -74,7 +78,7 @@ const WhereItWorks = () => {
       </div>
 
       <div
-      className='flex ml-24 w-[1300px] mt-[45px] h-[700px] '
+      className='flex justify-center  mt-[45px] h-[700px] '
       >
         <Image 
         src={p1}
