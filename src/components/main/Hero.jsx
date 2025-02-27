@@ -91,7 +91,7 @@ const Hero = () => {
                   <Img
                     src={item?.src}
                     alt={item?.alt}
-                    className="w-[100%] object-cover h-[408px]"
+                    className="w-[100%] object-scale-down h-[408px] object-center scale-110 "
                   />
                 </div>
               </CarouselItem>
